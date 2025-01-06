@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  background-color: slategray;
+@layer base {}
+
+@layer components {
+  .loading-point {
+    @apply animate-bounce;
+  }
+  .delay-0 {
+    animation-delay: 0ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+}
+
+@layer utilities {
+  
 }
