@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {}
+@layer base {
+  /* body {
+    @apply ;
+  } */
+}
 
 @layer components {
   .loading-point {
@@ -22,5 +26,13 @@
 }
 
 @layer utilities {
-  
+  .home-item {
+    @apply flex w-[90vw] h-[50vh] gap-6 bg-white rounded-2xl pr-2 ;
+  }
+  .home-item p {
+    @apply pt-2;
+  }
+  .header-item {
+    @apply z-50;
+  }
 }

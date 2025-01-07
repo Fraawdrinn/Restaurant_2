@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+
         <!-- Metadatas -->
         <meta charset="UTF-8">
         <meta content="IE-Edge" http-equiv="X-UA-Compatible">
@@ -13,10 +14,9 @@
         <meta name="title" content="Restautant Titre">
         <meta name="keywords" content="Restaurant, Restauration, Fast-food">
 
-        <style> 
-        </style>
     </head>
     <body class="flex justify-center items-center min-h-screen">
+
         <section class="flex flex-col gap-2 py-2">
             <div class="flex justify-center text-4xl font-bold">
                 <h1 class="">
@@ -26,16 +26,19 @@
                 <span class="loading-point delay-200">.</span>
                 <span class="loading-point delay-400">.</span>
             </div>
+            <span class="loader relative w-12 h-12 left-[5vw] border-4 border-white border-b-black rounded-full inline-block animate-spin"></span>
+        
             <p class="">
                 If you are not redirected, 
-                <a href="public/pages/main.html" class="text-blue-500 underline">click here</a>.
+                <a href="public/main.html" class="text-blue-500 underline">click here</a>.
             </p>
-            <span class="loader relative w-12 h-12 left-[6vw] border-4 border-white border-b-black rounded-full inline-block animate-spin"></span>
         </section>
+
         <script>
             setTimeout(() => {
-                window.location.href = 'public/pages/main.html';
-            }, 1000);
+                window.location.href = 'public/main.html';
+            }, 500);
         </script>
+
     </body>
 </html>
