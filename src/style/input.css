@@ -9,17 +9,13 @@
 }
 
 @layer components {
-  .loading-point {
-    @apply animate-bounce;
-  }
+  /* Loading points delay */
   .delay-0 {
     animation-delay: 0ms;
   }
-
   .delay-200 {
     animation-delay: 200ms;
   }
-
   .delay-400 {
     animation-delay: 400ms;
   }
@@ -39,4 +35,29 @@
     @apply relative text-[22px] text-white font-medium no-underline ml-10 before:content-[''] before:absolute before:top-full 
     before:left-0 before:w-0 before:h-[2px] before:bg-white before:transition-[width] before:duration-300 hover:before:w-full;
   }
+}
+
+/* Initial state of the elements */
+.to-animate, .to-animate {
+  opacity: 0;              
+  transform: translateY(20px);   
+  transition: opacity 1s ease, transform 1s ease;
+}
+/* When the 'show' class is added, elements will become visible and move to their normal position */
+.to-animate.show, .to-animate.show {
+  opacity: 1;                 
+  transform: translateY(0);      
+}
+.to-animate {
+  will-change: opacity, transform;
+}
+
+.nav-to-animate {
+  @apply border-b border-[#222] backdrop-blur-sm;
+}
+
+
+
+nav.header-item {
+  background-color: rgba(0, 0, 0, 0.2);
 }
