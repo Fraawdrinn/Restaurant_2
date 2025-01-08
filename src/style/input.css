@@ -35,4 +35,8 @@
   .header-item {
     @apply z-50;
   }
+  .nav-item {
+    @apply relative text-[22px] text-white font-medium no-underline ml-10 before:content-[''] before:absolute before:top-full 
+    before:left-0 before:w-0 before:h-[2px] before:bg-white before:transition-[width] before:duration-300 hover:before:w-full;
+  }
 }
