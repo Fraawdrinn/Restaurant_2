@@ -32,7 +32,7 @@
     @apply z-50;
   }
   .nav-item {
-    @apply relative text-[22px] text-white font-medium no-underline ml-10 before:content-[''] before:absolute before:top-full 
+    @apply relative text-[22px] text-white font-medium no-underline ml-10 pb-1 before:content-[''] before:absolute before:top-full 
     before:left-0 before:w-0 before:h-[2px] before:bg-white before:transition-[width] before:duration-300 hover:before:w-full;
   }
 }
@@ -52,12 +52,10 @@
   will-change: opacity, transform;
 }
 
-.nav-to-animate {
-  @apply border-b border-[#222] backdrop-blur-sm;
+nav {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-
-
-nav.header-item {
-  background-color: rgba(0, 0, 0, 0.2);
+.social-icon {
+  @apply ml-3 w-6 h-6;
 }
