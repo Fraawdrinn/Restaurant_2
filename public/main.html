@@ -16,36 +16,32 @@
 </head>
 <body class="m-0 p-0 scroll-smooth font-poppins bg-[#bdbdbd]">
 
-  <header id="head" class="flex w-full h-full text-white">
+  <header id="head" class="relative flex w-full h-full text-white ">
     <img src="assets/img/inside5.jpg" alt="Intérieur d'un restaurant"
-    class="object-cover">
+    class="absolute min-h-[100vh] min-w-full object-cover">
     
     <nav class="header-item fixed w-full px-[100px] py-5 pb-2 flex justify-evenly items-center text-sm border-b border-[#222] backdrop-blur-sm">
       <a 
       href="main.html"
       class="text-4xl text-white no-underline font-bold pr-8 pb-2">
-        Logo
-      </a>
+        Logo</a>
       <a 
       href="" 
       class="nav-item">
-        Accueil
-      </a>
+        Accueil</a>
       <a 
       href="" 
       class="nav-item">
-        Nos plats
-      </a>
+        Nos plats</a>
       <a 
       href="" 
       class="nav-item">
-        Nos horaires
-      </a>
+        Nos horaires</a>
       <a 
       href="" 
       class="nav-item">
-        Nous contacter
-      </a>
+        Nous contacter</a>
+      <input type="checkbox" role="button" aria-label="Display the menu" class="menu md:hidden">
     </nav>
     <!-- Flèche pour indiquer de scroller -->
     <a id="scroll-indicator" href="#main" 
@@ -134,5 +130,6 @@
     </h1>
   </footer>
   <script src="../src/scripts/script.js"></script>
+  <script src="../src/scripts/nav.js"></script>
 </body>
 </html>
