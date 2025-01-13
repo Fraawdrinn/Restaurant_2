@@ -53,10 +53,12 @@
   will-change: opacity, transform;
 }
 
-.nav-to-animate {
-  @apply border-b border-[#222] backdrop-blur-sm;
+nav {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
+.social-icon {
+  @apply ml-3 w-6 h-6;
 
 
 nav.header-item {
